@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="Es">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Productos</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+
+            <h1 class="text-center">Catálogo de Productos</h1>
+        </header>
+
+        <form action="">
+            <label for="idCodigo">Código</label>
+            <input type="number" class="form-control" id="idCodigo" name="txtCodigo">
+
+            <label for="idNombre">Nombre</label>
+            <input type="text" class="form-control" id="idNombre" name="txtNombre">
+
+            <label for="idPrecio">Precio</label>
+            <input type="number" class="form-control" id="idPrecio" name="txtPrecio">
+
+            <br>
+            <input type="file" id="idImagen" class="btn btn-success" Onchange="getFile()">
+
+
+            <hr>
+            <input type="button" value="Guardar datos" class="btn btn-success" onclick="agregarProducto()">
+
+            <br>
+            <table class="table table-bordered table-striped">
+                <thead style="background-color: black; color: white;">
+                    <tr>
+                        <th>Codigo</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Imagen</th>
+                    </tr>
+                </thead>
+                <tbody id="idTableBody">
+
+                </tbody>
+            </table>
+
+        </form>
+
+        <footer>
+
+        </footer>
+
+    </div>
+
+
+    <script src="../Js/Catalogo_productos.js"></script>
+
+</body>
+
+</html>

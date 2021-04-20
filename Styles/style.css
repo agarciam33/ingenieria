@@ -1,0 +1,309 @@
+/* Esta hoja de estilos se utilizo en casi las paginas html ) */
+*{
+    box-sizing: border-box;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+body
+{
+background-color: whitesmoke;
+
+}
+.grid-container
+{
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    
+
+
+}
+.grid-containerProd{
+
+    display: grid;
+    grid-template-columns: 10fr;
+
+}
+.grid-header
+{   background-color:#4DADF9;
+    width: 100%;
+    height: 100px;    
+    grid-column: 1 / span 2;
+    text-align: center;
+    margin-top: 0;
+}
+.grid-headerProd
+{   background-color:#4DADF9;
+    width: 100%;
+    height: 100px;    
+    grid-column: 1 / span 2;
+    text-align: center;
+    margin-top: 0;
+}
+.grid-headerProd img
+{   
+    margin-left: 20px;
+    float: left;
+    margin-top: 8px;
+    width: 100px;
+    height: 80px;
+
+}
+.grid-headerProd a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    
+
+}
+.grid-headerProd a:hover
+{
+   background-color: white;
+    padding: 5px;
+
+}
+.grid-headerProd li
+{   
+    margin-right: 25px;
+    float: right;
+    margin-top: 20px;
+    padding: 15px;
+    list-style: none;
+    
+
+
+}
+.grid-header img
+{   
+    margin-left: 20px;
+    float: left;
+    margin-top: 8px;
+    width: 100px;
+    height: 80px;
+
+}
+.grid-header a
+{
+    text-decoration: none;
+    font-size: 20px;
+    
+
+}
+.grid-header a:hover
+{
+    background-color: tomato;
+    padding: 5px;
+
+}
+
+.grid-header li
+{   
+    margin-right: 25px;
+    float: right;
+    margin-top: 20px;
+    padding: 15px;
+    list-style: none;
+    
+
+
+}
+.aside_cls
+{
+    text-align: center;
+    background-color: wheat;
+
+
+}
+.aside_cls img
+{
+    border-radius: 40px;
+    margin-left: 1%;
+}
+.aside_cls table 
+{
+ 
+    margin: 5% 10% 10% 10%;
+    align-content: center;
+    width: 80%;
+    border: 3px solid #000;
+
+}
+.aside_cls tr, .aside_cls th
+{   
+    
+    border: 1px solid #000;
+    padding: 0.3em;
+}
+.aside_cls a
+{
+    
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+
+}
+tr:hover
+{
+    background-color: silver;
+
+}
+
+main
+{
+background-color:#C7D9E8;
+
+
+}
+.grid-main img
+{
+    margin-top: 10px;
+    margin-left: 25%;
+    width: 300px;
+    height: 150px;
+
+}
+.grid-main h2,.grid-main p
+{   
+    text-align: justify;
+    margin-right: 40px;
+    margin-left: 40px;
+    padding: 10px  1px  1px  10px ;
+
+}
+footer
+{
+    text-align: center;
+    background-color: #FBA38C;
+    font-family: arial;
+}
+.grid-main_productos img{
+    
+width: 250px;
+height: 150px;
+
+}
+.grid-main_productos h1
+{
+    text-align: center;
+
+}
+
+
+/* Un pequeña utilizacion de media Queris unicamente para Index*/
+@media screen and (max-width: 600px) {
+
+    .grid-container{
+
+        grid-template-columns: 1fr 1fr;
+    }
+    .grid-main img
+    {
+        margin-top: 10px;
+        margin-left: 25%;
+        width: 125px;
+        height: 125px;
+    
+    }
+
+    .aside_cls img
+    {
+        width: 100px;
+        border-radius: 40px;
+        margin-left: 1%;
+    }
+    .aside_cls table 
+    {
+     
+      
+        align-content: center;
+        width: 35%;
+        border: 3px solid #000;
+    
+    }
+    .grid-main_productos img{
+    
+        width: 200px;
+        height: 150px;
+        
+        }
+
+
+}
+
+
+.body_cls{
+
+    background-image: linear-gradient(rgba(0, 60, 255, 0.603), rgba(0, 174, 255, 0.274));
+    /* utilizacion de fondo de pantalla degradado (Pseudo Clases)*/
+
+}
+
+/* En esta parte se le dio forma al Fomulario */
+.Form-registro{
+
+    width: 400px;
+    background-color: #044883;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 5px 10px 49px  black; /* sirve para darle un sombreado al formulario*/
+
+}
+.Form-registro h2 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+.Form-registro p{
+    font-family:tahoma;
+    text-align: center;
+
+}
+.Form-registro a
+{
+    text-decoration: none;
+    color: white;
+
+
+}
+.Form-registro a:hover {
+
+    background-color: gray;
+
+
+}
+.Controles{
+    /* Controles, se definio como cada caja de texto para la insercion de datos*/
+
+    background-color: #044883;
+    width: 100%;
+    padding: 7px;
+    border-radius: 4px;
+    margin-bottom: 9px;
+    border: 1px solid #2597FA ;
+    font-size: 15px;
+    color: white;
+}
+.Boton{
+    color: white;
+    background-color: #1C27FF;
+    border-radius: 5px;
+    margin: 13px 0;
+    padding: 10px;
+    font-size: 15px;
+    font-family: arial;
+    width: 100%;
+
+
+}
+
+.footer_form{
+
+border-radius: 30px;    
+}
+
